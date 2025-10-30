@@ -15,13 +15,13 @@ Variables utilizadas:
 
 Mi código Pide datos al usuario, muestra información en pantalla, usa conversiones de datos, aplica operadores aritméticos, de comparación y lógicos
 """
-# Titulo de mi código
+# Titulo 
 print("Bienvenido a mi mundo musical\n")
 
 # Constante
 MAYOR_EDAD = 18
 
-# Slicitud de datos al usuario
+# Solicitud de datos al usuario
 nombre = input("Cómo te llamas? ")
 edad = int(input("Cuántos años tienes? "))
 escucha_diaria = float(input("Cuántas horas al día escuchas música? "))
@@ -33,13 +33,13 @@ horas_semanales = escucha_diaria * 7
 es_mayor = edad >= MAYOR_EDAD
 escucha_mucho = escucha_diaria > 3.0
 
-# Salida de datos
+# Impresión
 print("\n Hola,", nombre)
 print("Tienes", edad, "años y escuchas aproximadamente", horas_semanales, "horas de música por semana.")
 print("Tu artista favorito/a es:", artista_favorito)
 print("Escuchas musica de tipo:",tipo_musica)
 
-# Condición 
+ 
 if es_mayor and escucha_mucho:
     print("Eres mayor de edad y un verdadero amante de la música. 🎶")
 elif es_mayor and not escucha_mucho:
@@ -47,6 +47,6 @@ elif es_mayor and not escucha_mucho:
 else:
     print("Aún eres menor, ¡pero buena elección musical! 👍")
 
-# Conversión de número a cadena 
+
 edad_str = str(edad)
 print("Tu edad como texto sería: " + edad_str)
